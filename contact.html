@@ -42,9 +42,9 @@
             <a href="#" class="primary-btn">Appointment</a>
         </div>
         <ul class="offcanvas__widget">
-            <li><i class="fa fa-phone"></i> 1-677-124-44227</li>
-            <li><i class="fa fa-map-marker"></i> Los Angeles Gournadi, 1230 Bariasl</li>
-            <li><i class="fa fa-clock-o"></i> Mon to Sat 9:00am to 18:00pm</li>
+            <li><i class="fa fa-whatsapp"></i> <a href="tel:+523325817043">+52 33 2581 7043</a></li>
+            <li><i class="fa fa-map-marker"></i> Calle López Cotilla # 1931 </li>
+            <li><i class="fa fa-clock-o"></i> Lunes a Sabado 9:00am hasta 18:00pm</li>
         </ul>
         <div class="offcanvas__social">
             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -62,9 +62,10 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <ul class="header__top__left">
-                            <li><i class="fa fa-phone"></i> 1-677-124-44227</li>
-                            <li><i class="fa fa-map-marker"></i> Los Angeles Gournadi, 1230 Bariasl</li>
-                            <li><i class="fa fa-clock-o"></i> Mon to Sat 9:00am to 18:00pm</li>
+                            <!-- Add a link to your whatsapp and add option to call the number with a click -->
+                            <li><i class="fa fa-whatsapp"></i> <a href="tel:+523325817043">+52 33 2581 7043</a></li>
+                            <li><i class="fa fa-map-marker"></i> Calle López Cotilla # 1931 </li>
+                            <li><i class="fa fa-clock-o"></i> Lunes a Sabado 9:00am hasta 18:00pm</li>
                         </ul>
                     </div>
                     <div class="col-lg-4">
@@ -72,7 +73,6 @@
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>
                             <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
                         </div>
                     </div>
                 </div>
@@ -89,22 +89,15 @@
                     <div class="header__menu__option">
                         <nav class="header__menu">
                             <ul>
-                                <li><a href="./index.html">Home</a></li>
-                                <li><a href="./about.html">About</a></li>
-                                <li><a href="./services.html">Services</a></li>
-                                <li><a href="#">Pages</a>
-                                    <ul class="dropdown">
-                                        <li><a href="./pricing.html">Pricing</a></li>
-                                        <li><a href="./doctor.html">Doctor</a></li>
-                                        <li><a href="./blog-details.html">Blog Details</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="./blog.html">News</a></li>
-                                <li class="active"><a href="./contact.html">Contact</a></li>
+                                <li class="active"><a href="./index.html">Home</a></li>
+                                <li><a href="./about.html">Nosotros</a></li>
+                                <li><a href="./services.html">Servicios</a></li>
+                                <li><a href="./blog.html">Blog</a></li>
+                                <li><a href="./contact.html">Contactanos</a></li>
                             </ul>
                         </nav>
                         <div class="header__btn">
-                            <a href="#" class="primary-btn">Appointment</a>
+                            <a href="#" class="primary-btn">Consulta</a>
                         </div>
                     </div>
                 </div>
@@ -117,7 +110,7 @@
     <!-- Header Section End -->
 
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-option spad set-bg" data-setbg="img/breadcrumb-bg.jpg">
+    <section class="breadcrumb-option spad set-bg" data-setbg="img/breadcrumb-bg.jpeg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -144,8 +137,8 @@
                             <i class="fa fa-map-marker"></i>
                         </div>
                         <div class="contact__widget__text">
-                            <h5>Address</h5>
-                            <p>Los Angeles Gournadi, 1230 Bariasl</p>
+                            <h5>Direccion</h5>
+                            <p>Calle López Cotilla # 1931 | Guadalajara, Jal.</p>
                         </div>
                     </div>
                 </div>
@@ -155,8 +148,8 @@
                             <i class="fa fa-phone"></i>
                         </div>
                         <div class="contact__widget__text">
-                            <h5>Hotline</h5>
-                            <p>1-677-124-44227 • 1-688-356-66889</p>
+                            <h5>Numero de Telefono</h5>
+                            <a href="tel:+523325817043">+52 33 2581 7043</a>
                         </div>
                     </div>
                 </div>
@@ -166,7 +159,7 @@
                             <i class="fa fa-envelope"></i>
                         </div>
                         <div class="contact__widget__text">
-                            <h5>Email</h5>
+                            <h5>Correo Electronico</h5>
                             <p>Support@gmail.com</p>
                         </div>
                     </div>
@@ -176,18 +169,17 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="contact__pic">
-                            <img src="img/contact-pic.jpg" alt="">
+                            <img src="img/contact-pic.jpeg" alt="">
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="contact__form">
-                            <h3>Get in touch</h3>
-                            <form action="#">
-                                <input type="text" placeholder="Name">
-                                <input type="text" placeholder="Email">
-                                <input type="text" placeholder="Website">
-                                <textarea placeholder="Message"></textarea>
-                                <button type="submit" class="site-btn">Send Message</button>
+                            <h3>Ponte en contacto con nosotros..!</h3>
+                            <form action="send_whatsapp.php" method="post">
+                                <input type="text" name="nombre" placeholder="Nombre" required>
+                                <input type="text" name="correo" placeholder="Correo Electronico" required>
+                                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                                <button type="submit" class="site-btn">Enviar Mensaje</button>
                             </form>
                         </div>
                     </div>
@@ -197,102 +189,101 @@
     </section>
     <!-- Contact Section End -->
 
-    <!-- Footer Section Begin -->
-    <footer class="footer">
-        <div class="footer__top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4">
-                        <div class="footer__logo">
-                            <a href="#"><img src="img/footer-logo.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-8">
-                        <div class="footer__newslatter">
-                            <form action="#">
-                                <input type="text" placeholder="Email">
-                                <button type="submit" class="site-btn">Subscribe</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="footer__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- Footer Section Begin -->
+<footer class="footer">
+    <div class="footer__top">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="footer__widget">
-                        <h5>Company</h5>
-                        <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Departments</a></li>
-                            <li><a href="#">Find a Doctor</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">News</a></li>
-                        </ul>
+                <div class="col-lg-4 col-md-4">
+                    <div class="footer__logo">
+                        <a href="#"><img src="img/logo.png" alt=""></a>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="footer__widget">
-                        <h5>Quick links</h5>
-                        <ul>
-                            <li><a href="#">Facial Fillers</a></li>
-                            <li><a href="#">Breast Surgery</a></li>
-                            <li><a href="#">Body Lifts</a></li>
-                            <li><a href="#">Face & Neck</a></li>
-                            <li><a href="#">Fat Reduction</a></li>
-                        </ul>
+                <div class="col-lg-4 col-md-8">
+                    <div class="footer__newslatter">
+                        <form action="https://wa.me/523325817043" method="get" target="_blank">
+                            <input type="text" placeholder="Escribenos tu mensaje" name="text">
+                            <button type="submit" class="site-btn">Enviar</button>
+                        </form>
+                        
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="footer__address">
-                        <h5>Contact Us</h5>
-                        <ul>
-                            <li><i class="fa fa-map-marker"></i> Los Angeles Gournadi, 1230 Bariasl</li>
-                            <li><i class="fa fa-phone"></i> 1-677-124-44227</li>
-                            <li><i class="fa fa-envelope"></i> Support@gmail.com</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-6">
-                    <div class="footer__map">
-                        <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48158.305462977965!2d-74.13283844036356!3d41.02757295168286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2e440473470d7%3A0xcaf503ca2ee57958!2sSaddle%20River%2C%20NJ%2007458%2C%20USA!5e0!3m2!1sen!2sbd!4v1575917275626!5m2!1sen!2sbd"
-                        height="190" style="border:0" allowfullscreen=""></iframe>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer__copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        <div class="footer__copyright__text">
-                            <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
-                        </div>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </div>
-                    <div class="col-lg-5">
-                        <ul>
-                            <li>All Rights Reserved</li>
-                            <li>Terms & Use</li>
-                            <li>Privacy Policy</li>
-                        </ul>
-                    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-6">
+                <div class="footer__widget">
+                    <h5>Nuestra Empresa</h5>
+                    <ul>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Departments</a></li>
+                        <li><a href="tel:+523325817043">Haz tu cita</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6">
+                <div class="footer__widget">
+                    <h5>Aprende Mas</h5>
+                    <ul>
+                        <li><a href="#">Como bajar de peso? </a></li>
+                        <li><a href="#">Quieres bajar de peso?</a></li>
+                        <li><a href="#">Definir metas</a></li>
+                        <li><a href="#">Encuentra tu rutina</a></li>
+                        <li><a href="#">Reduce tu fat</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="footer__address">
+                    <h5>Contactanos</h5>
+                    <ul>
+                        <li><i class="fa fa-map-marker"></i> Calle López Cotilla # 1931 entre (Javier Gamboa y Ruiz de Alarcón)Col. Lafayette / Guadalajara, Jal.</li>
+                        <li><i class="fa fa-whatsapp"></i> <a href="tel:+523325817043">+52 33 2581 7043</a></li>
+                        <li><i class="fa fa-envelope"></i> Support@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-6">
+                <div class="footer__map">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14931.639836062857!2d-103.3957214128418!3d20.673241899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae0ddb66aaab%3A0x2a726c662e4a5ea2!2sSalud%20y%20Figura!5e0!3m2!1sen!2sus!4v1704262523135!5m2!1sen!2sus"
+                    height="190" style="border:0" allowfullscreen=""></iframe>
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- Footer Section End -->
+    </div>
+    <div class="footer__copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    <div class="footer__copyright__text">
+                        <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved </a></p>
+                    </div>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </div>
+                <div class="col-lg-5">
+                    <ul>
+                        <li>Terminos y condiciones</li>
+                        <li>Poliza de privacidad</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End -->
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
@@ -304,6 +295,12 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- Whatsapp -->
+    <?php
+    // Include the PHP file
+    include 'send_whatsapp.php';
+    ?>
 </body>
 
 </html>
